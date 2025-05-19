@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.hero {
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.toggle-button {
+    display: inline-block;
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 1.5rem 3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    margin: 1rem auto;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #ff3333;
+}
+
+.toggle-section {
+    padding: 3rem 1rem;
+    background-color: #f9f9f9;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.centered-image {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 2rem 1rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links a {
+    color: #fff;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff4d4d;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .toggle-button {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .centered-image {
+        max-width: 100%;
+    }
+
+    .popular-races h2 {
+        font-size: 2rem;
+    }
+}
+
+.text-section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.text-section h2 {
+  font-size: 2.5rem;
+  color: #222;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.text-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.centered-image {
+  display: block;
+  margin: 30px auto;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.toggle-content {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  display: none;
+}
+
+.toggle-content h2,
+.toggle-content h3 {
+  font-size: 2rem;
+  color: #222;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.toggle-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.toggle-content .centered-image {
+  display: block;
+  margin: 30px auto;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+a {
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:visited {
+  color: red;
+  text-decoration: none;
+}
+
+li {
+  text-align: left;
+}

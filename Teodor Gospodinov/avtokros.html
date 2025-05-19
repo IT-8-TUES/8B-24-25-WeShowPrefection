@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Автокрос състезания</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('snimki/avtokros1.jpg') center/cover;">
+    <div class="hero-content">
+      <h1>Автокрос състезания</h1>
+      <p>Комбинация от скорост, кал и контрол</p>
+    </div>
+  </div>
+
+  <section class="text-section">
+    <h2 style="text-align: center;">Какво представлява автокросът?</h2>
+    <p>
+      Автокросът е форма на автомобилно състезание, провеждащо се на затворени трасета с естествен или изкуствен терен – кал, пръст, пясък. Целта е да се премине трасето възможно най-бързо, обикновено в серии от обиколки.
+    </p>
+    <p>
+      Автомобилите са специално подготвени за неравни повърхности – с подсилено окачване, гуми за всякакъв терен и често без излишна електроника. Автокросът е динамичен и често включва зрелищни завои, поднасяния и сблъсъци.
+    </p>
+    <img src="snimki/avtokros2.webp" alt="Автокрос състезание" class="centered-image">
+  </section>
+
+  <section class="toggle-section">
+    <button class="toggle-button" onclick="toggleContent('history')">История и развитие</button>
+    <div id="history" class="toggle-content">
+      <p>
+        Автокросът възниква в Европа през средата на 20-ти век, като достъпна форма на състезание с модифицирани коли. С времето се утвърждава като дисциплина със собствени правила, категории и шампионати.
+      </p>
+      <p>
+        Днес има национални и европейски първенства, организирани от FIA, а България също има силни традиции в този спорт, с множество местни трасета и състезания.
+      </p>
+      <img src="snimki/avtokros3.png" alt="История на автокроса" class="centered-image">
+    </div>
+  </section>
+
+  <section class="toggle-section">
+    <button class="toggle-button" onclick="toggleContent('types')">Типове автокрос състезания</button>
+    <div id="types" class="toggle-content">
+      <p>
+        Автокросът се дели на няколко основни вида според превозното средство:
+        <ul>
+          <li><strong>Туринг автомобили</strong> – серийни коли, модифицирани за офроуд.</li>
+          <li><strong>Бъгита (Buggy)</strong> – леки тръбни конструкции с висока маневреност.</li>
+          <li><strong>Прототипи</strong> – специално изградени машини с мощни двигатели.</li>
+          <li><strong>Детски и юношески категории</strong> – за млади състезатели с по-слаби машини.</li>
+        </ul>
+      </p>
+      <p>
+        Повечето състезания се провеждат на обиколки (5 до 10), като се оценява не само времето, но и позицията при финала.
+      </p>
+      <img src="snimki/avtokros4.jpg" alt="Типове автокрос" class="centered-image">
+    </div>
+  </section>
+
+  <section class="toggle-section">
+    <button class="toggle-button" onclick="toggleContent('modern')">Съвременен автокрос</button>
+    <div id="modern" class="toggle-content">
+      <p>
+        В съвременния автокрос се използват усъвършенствани материали и окачване, които позволяват висока скорост и контрол върху неравен терен. Все по-често се срещат и електронни системи за телеметрия.
+      </p>
+      <p>
+        Въпреки това, автокросът запазва своя „механичен“ дух – успехът зависи повече от уменията на пилота и настройките на колата, отколкото от електроника.
+      </p>
+      <img src="snimki/avtokros5.webp" alt="Съвременен автокрос" class="centered-image">
+    </div>
+  </section>
+
+  <div class="toggle-section">
+    <h2>Популярни автокрос състезания</h2>
+
+    <button class="toggle-button" onclick="toggleContent('fiaxc')">FIA European Autocross</button>
+    <div id="fiaxc" class="toggle-content">
+      <p>Европейският шампионат по автокрос се провежда в няколко държави, включително Германия, Чехия, Латвия и България.</p>
+      <a href="https://www.fia.com/events/european-autocross-championship/season-2024/european-autocross-championship" target="_blank">Официален сайт</a>
+    </div>
+
+    <button class="toggle-button" onclick="toggleContent('bgxc')">Автокрос България</button>
+    <div id="bgxc" class="toggle-content">
+      <p>България има активно участие в автокрос спорта, с трасета в Ловеч, Хасково, Сливен и други градове.</p>
+      <a href="https://bfm.bg" target="_blank">Федерация по автомобилизъм</a>
+    </div>
+
+    <button class="toggle-button" onclick="toggleContent('buggy')">Buggy & Crosscar Series</button>
+    <div id="buggy" class="toggle-content">
+      <p>Бъгитата са особено популярни в европейските серии и се използват както от младежи, така и в елитни категории.</p>
+      <a href="https://www.autocross.lv" target="_blank">Примерна серия</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Автокрос състезания</p>
+      <div class="social-links">
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  function toggleContent(id) {
+    const element = document.getElementById(id);
+    element.style.display = element.style.display === "block" ? "none" : "block";
+  }
+
+  window.onload = function() {
+    const contentSections = document.querySelectorAll('.toggle-content');
+    contentSections.forEach(section => {
+      section.style.display = "none";
+    });
+  };
+</script>
+
+</body>
+</html>

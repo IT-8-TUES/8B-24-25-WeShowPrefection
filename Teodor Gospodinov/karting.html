@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Картинг състезания</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('snimki/karting1.jpg') center/cover;">
+    <div class="hero-content">
+      <h1>Картинг състезания</h1>
+      <p>Първата стъпка към професионалния моторен спорт</p>
+    </div>
+  </div>
+
+  <section class="text-section">
+    <h2 style="text-align: center;">Какво е картинг състезание?</h2>
+    <p>
+      Картингът представлява състезание с малки, леки и маневрени превозни средства, наречени картове. Провежда се на специално изградени трасета и е една от най-достъпните и популярни форми на моторен спорт.
+    </p>
+    <p>
+      Той често служи като отправна точка за млади състезатели, които мечтаят да стигнат до Формула 1. Въпреки по-ниските скорости спрямо другите моторни спортове, картингът изисква изключителен контрол, рефлекси и състезателна стратегия.
+    </p>
+    <img src="snimki/karting2.webp" alt="Картинг състезание" class="centered-image">
+  </section>
+
+  <section class="toggle-section">
+    <button class="toggle-button" onclick="toggleContent('history')">История и развитие</button>
+    <div id="history" class="toggle-content">
+      <p>
+        Картингът възниква в САЩ в края на 50-те години. Първият карт е построен от Арт Инглс през 1956 г., а скоро след това започват да се провеждат и организирани състезания. Популярността на този спорт расте бързо, особено в Европа.
+      </p>
+      <p>
+        Много от легендарните състезатели като Айртон Сена, Михаел Шумахер и Люис Хамилтън започват кариерата си именно с картинг. Днес съществуват стотици състезателни серии по целия свят, както за деца, така и за възрастни.
+      </p>
+      <img src="snimki/karting3.jpg" alt="История на картинга" class="centered-image">
+    </div>
+  </section>
+
+  <section class="toggle-section">
+    <button class="toggle-button" onclick="toggleContent('types')">Типове картинг състезания</button>
+    <div id="types" class="toggle-content">
+      <p>
+        Картинг състезанията се делят на няколко основни класа:
+        <ul>
+          <li><strong>Базов (Recreational)</strong> – за любители в наети или собствени картове.</li>
+          <li><strong>Състезателен (Competitive)</strong> – организирани серии с професионални машини.</li>
+          <li><strong>Indoor и Outdoor</strong> – състезания в зали или на открито.</li>
+          <li><strong>Детски и юношески класове</strong> – за млади състезатели от 6-годишна възраст.</li>
+        </ul>
+      </p>
+      <p>
+        Има и електрически картинги, които набират популярност в закрити писти и центрове.
+      </p>
+      <img src="snimki/karting4.jpg" alt="Типове картинг състезания" class="centered-image">
+    </div>
+  </section>
+
+  <section class="toggle-section">
+    <button class="toggle-button" onclick="toggleContent('modern')">Съвременен картинг</button>
+    <div id="modern" class="toggle-content">
+      <p>
+        Днес картинг състезанията използват модерни технологии – от телеметрия до композитни материали и електрически двигатели. Високите класове състезания вече използват картове с 2-тактови двигатели, развиващи скорости над 100 км/ч.
+      </p>
+      <p>
+        Организациите като FIA Karting Championship задават стандартите и провеждат световни първенства. Все повече се развиват и симулаторите, които използват картинг физика за обучение и подготовка.
+      </p>
+      <img src="snimki/karting5.webp" alt="Съвременен картинг" class="centered-image">
+    </div>
+  </section>
+
+  <div class="toggle-section">
+    <h2>Популярни картинг състезания и организации</h2>
+
+    <button class="toggle-button" onclick="toggleContent('fia')">FIA Karting</button>
+    <div id="fia" class="toggle-content">
+      <p>FIA организира най-престижните международни картинг шампионати с участници от цял свят.</p>
+      <a href="https://www.fiakarting.com" target="_blank">Официален сайт</a>
+    </div>
+
+    <button class="toggle-button" onclick="toggleContent('rotax')">Rotax MAX Challenge</button>
+    <div id="rotax" class="toggle-content">
+      <p>Една от най-известните световни серии по картинг, използваща стандартни Rotax двигатели.</p>
+      <a href="https://www.rotax-kart.com" target="_blank">Официален сайт</a>
+    </div>
+
+    <button class="toggle-button" onclick="toggleContent('wsks')">WSK Series</button>
+    <div id="wsks" class="toggle-content">
+      <p>Италианска организация, провеждаща важни европейски картинг шампионати и развиваща млади таланти.</p>
+      <a href="https://www.wskarting.it" target="_blank">Официален сайт</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Картинг състезания</p>
+      <div class="social-links">
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  function toggleContent(id) {
+    const element = document.getElementById(id);
+    element.style.display = element.style.display === "block" ? "none" : "block";
+  }
+
+  window.onload = function() {
+    const contentSections = document.querySelectorAll('.toggle-content');
+    contentSections.forEach(section => {
+      section.style.display = "none";
+    });
+  };
+</script>
+
+</body>
+</html>

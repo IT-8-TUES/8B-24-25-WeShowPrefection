@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Пистови състезания</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+  <!-- Hero Section -->
+  <div class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('snimki/pista1.jpeg') center/cover;">
+    <div class="hero-content">
+      <h1>Пистови състезания</h1>
+      <p>Вижте и научете всичко за състезанията на писта</p>
+    </div>
+  </div>
+
+  <!-- Основна идея на пистовите състезания -->
+ <section class="text-section">
+  <h2 style="text-align: center;">Идея на пистовите състезания</h2>
+  <p>
+    Пистовите състезания се провеждат на специално изградени тракове, които предлагат една от най-големите скорости и емоции за състезателите и зрителите. В тях автомобилите преминават през точно определени завои и прави участъци, като целта е да се премине най-бързо през трасето. Тези състезания се провеждат на затворени писти, което намалява риска от инциденти в сравнение с публичните пътища.
+  </p>
+  <p>
+    Въпреки че пистовите състезания не включват преодоляване на различни терени, те изискват изключителни умения за управление на високи скорости и маневриране в динамични условия. Автомобилите се настройват така, че да бъдат максимално бързи, като същевременно трябва да запазват стабилност при високи скорости в завоите.
+  </p>
+  <img src="snimki/pista3.webp" alt="Пистов автомобил" class="centered-image">
+</section>
+
+
+  <!-- История на пистовите състезания -->
+  <section class="toggle-section">
+    <button class="toggle-button" onclick="toggleContent('history')">История и развитие</button>
+    <div id="history" class="toggle-content">
+      <p>
+        Пистовите състезания имат дълга и богата история, като започват още в началото на 20-ти век. Един от най-известните примери е Формула 1, която съществува още от 1950 година. Състезания като 24-те часа на Льо Ман и Гран При на Монако са сред най-престижните в света на моторните спортове. 
+        През годините тези състезания са претърпели значителни промени в технологията, както и в нивото на конкуренция. 
+      </p>
+      <p>
+        През 1950 г. е създадено състезанието Формула 1, което бързо се утвърдило като най-престижната пистова надпревара в света. Състезания като 24-те часа на Льо Ман и 500-те мили на Индианаполис също са били част от изграждането на съвременния свят на моторните спортове.
+      </p>
+      <img src="snimki/pista4.jpg" alt="История на Формула 1" class="centered-image">
+    </div>
+  </section>
+
+  <!-- Типове пистови състезания -->
+  <section class="toggle-section">
+    <button class="toggle-button" onclick="toggleContent('types')">Типове пистови състезания</button>
+    <div id="types" class="toggle-content">
+      <p>
+        Най-популярните пистови състезания включват Формула 1, NASCAR, и endurance състезания като 24-те часа на Льо Ман. В тях автомобилите се състезават на различни видове тракове, от високоскоростни прави участъци до завои, които поставят шофьорите под сериозно изпитание.
+      </p>
+      <p>
+        Формула 1 е символ на високоскоростните състезания, докато NASCAR се характеризира с плоски и широки писти, които поставят акцент върху контролиране на високата скорост. 24-те часа на Льо Ман са издръжливостно състезание, което поставя на изпитание както автомобилите, така и състезателите за продължителността на цялото състезание.
+      </p>
+      <img src="snimki/pista5.jpg" alt="Типове пистови състезания" class="centered-image">
+    </div>
+  </section>
+
+  <!-- Съвременни пистови състезания -->
+  <section class="toggle-section">
+    <button class="toggle-button" onclick="toggleContent('modern')">Съвременен облик на пистовите състезания</button>
+    <div id="modern" class="toggle-content">
+      <p>
+        Днес пистовите състезания са напълно професионализирани, с огромни бюджети и глобално внимание. Формула 1 привлича хиляди зрители на живо и милиони телевизионни зрители по целия свят. Технологиите в автомобилите се развиват постоянно, като включват хибридни двигатели, аеродинамични подобрения и нови материали за намаляване на теглото.
+      </p>
+      <p>
+        Напредъкът в технологията води до значително подобряване на безопасността, като новите автомобили са оборудвани с активни и пасивни системи за защита на състезателите. Все повече се въвеждат хибридни и електрически технологии, които променят изцяло автомобилите в пистовите състезания.
+      </p>
+      <img src="snimki/pista6.jpg" alt="Съвременни пистови състезания" class="centered-image">
+    </div>
+  </section>
+
+<!-- Популярни пистови състезания -->
+<div class="toggle-section">
+  <h2>Популярни пистови състезания</h2>
+
+  <button class="toggle-button" onclick="toggleContent('f1')">Формула 1</button>
+  <div id="f1" class="toggle-content">
+    <p>Формула 1 е най-престижният шампионат в моторните спортове. Известна с високите скорости, иновациите и стратегическата дълбочина, тя привлича глобална публика и е връх на инженерното съвършенство.</p>
+    <a href="https://www.formula1.com" target="_blank">Официален сайт</a>
+  </div>
+
+  <button class="toggle-button" onclick="toggleContent('nascar')">NASCAR</button>
+  <div id="nascar" class="toggle-content">
+    <p>NASCAR е американски състезателен шампионат, фокусиран върху овални писти. Известен е със зрелищни сблъсъци, издръжливост и огромни фен-бази в САЩ.</p>
+    <a href="https://www.nascar.com" target="_blank">Официален сайт</a>
+  </div>
+
+  <button class="toggle-button" onclick="toggleContent('lemans')">24 часа на Льо Ман</button>
+  <div id="lemans" class="toggle-content">
+    <p>24-те часа на Льо Ман е най-известното издръжливостно състезание, което тества границите на автомобилите и състезателите. Провежда се във Франция от 1923 г.</p>
+    <a href="https://www.24h-lemans.com/en" target="_blank">Официален сайт</a>
+  </div>
+
+  <button class="toggle-button" onclick="toggleContent('motogp')">MotoGP</button>
+  <div id="motogp" class="toggle-content">
+    <p>MotoGP е най-високото ниво в състезанията с мотоциклети, съчетаващо скорост, техника и опасност. Състезанията са динамични и често се решават в последната обиколка.</p>
+    <a href="https://www.motogp.com" target="_blank">Официален сайт</a>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Пистови състезания</p>
+      <div class="social-links">
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  function toggleContent(id) {
+    const element = document.getElementById(id);
+    element.style.display = element.style.display === "block" ? "none" : "block";
+  }
+
+  window.onload = function() {
+    const contentSections = document.querySelectorAll('.toggle-content');
+    contentSections.forEach(section => {
+      section.style.display = "none";
+    });
+  };
+</script>
+
+</body>
+</html>

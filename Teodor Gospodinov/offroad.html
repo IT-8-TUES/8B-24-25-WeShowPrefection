@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Офроуд състезания</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('snimki/offroad1.jpg') center/cover;">
+    <div class="hero-content">
+      <h1>Офроуд състезания</h1>
+      <p>Сила, природа и издръжливост извън пътя</p>
+    </div>
+  </div>
+
+  <section class="text-section">
+    <h2 style="text-align: center;">Какво представляват офроуд състезанията?</h2>
+    <p>
+      Офроуд състезанията се провеждат извън стандартните пътища – през планини, пустини, кални трасета и скалисти местности. Участниците използват специално модифицирани автомобили, джипове, ATV и мотоциклети.
+    </p>
+    <p>
+      Целта не винаги е скорост – понякога основното предизвикателство е издръжливост, преодоляване на терен и навигация. Офроудът съчетава техника на управление, стратегия и механична устойчивост.
+    </p>
+    <img src="snimki/offroad2.jpg" alt="Офроуд състезание" class="centered-image">
+  </section>
+
+  <section class="toggle-section">
+    <button class="toggle-button" onclick="toggleContent('history')">История и развитие</button>
+    <div id="history" class="toggle-content">
+      <p>
+        Офроуд спортовете възникват още в средата на 20-ти век, първоначално като военни тестове за проходимост, а по-късно се превръщат в състезателна дисциплина. Едни от най-ранните официални офроуд състезания се провеждат в САЩ.
+      </p>
+      <p>
+        Днес офроудът има различни форми – от високоскоростни надпревари до бавни и технични препятствия, като „трофи рейдове“ и „рок кроулинг“. Развиват се и международни шампионати като Dakar Rally и Baja 1000.
+      </p>
+      <img src="snimki/offroad3.avif" alt="История на офроуд" class="centered-image">
+    </div>
+  </section>
+
+  <section class="toggle-section">
+    <button class="toggle-button" onclick="toggleContent('types')">Видове офроуд състезания</button>
+    <div id="types" class="toggle-content">
+      <p>
+        Най-разпространените офроуд дисциплини включват:
+        <ul>
+          <li><strong>Dakar Rally</strong> – най-известното офроуд състезание в света.</li>
+          <li><strong>Trophy Raid</strong> – навигация и издръжливост по тежък терен.</li>
+          <li><strong>Rock Crawling</strong> – бавно и технично катерене по камъни и препятствия.</li>
+          <li><strong>Cross-Country Rally</strong> – състезания на дълги дистанции.</li>
+          <li><strong>Offroad ATV / UTV Racing</strong> – с четириколки и малки бъгита.</li>
+        </ul>
+      </p>
+      <p>
+        Всеки тип изисква различни умения, подготовка и модификации на машините, включително подсилени окачвания, гуми за всякакъв терен и GPS навигация.
+      </p>
+      <img src="snimki/offroad4.jpeg" alt="Типове офроуд" class="centered-image">
+    </div>
+  </section>
+
+  <section class="toggle-section">
+    <button class="toggle-button" onclick="toggleContent('modern')">Съвременен офроуд</button>
+    <div id="modern" class="toggle-content">
+      <p>
+        Съвременният офроуд съчетава традиционните машини с нови технологии – електрически и хибридни офроудери, автономна навигация, дронове за заснемане и телеметрия в реално време.
+      </p>
+      <p>
+        Също така екологичните норми насърчават използването на по-чисти горива и минимално въздействие върху природата. Все повече събития се провеждат в екосъобразен формат.
+      </p>
+      <img src="snimki/offroad5.avif" alt="Съвременен офроуд" class="centered-image">
+    </div>
+  </section>
+
+  <div class="toggle-section">
+    <h2>Популярни офроуд състезания</h2>
+
+    <button class="toggle-button" onclick="toggleContent('dakar')">Dakar Rally</button>
+    <div id="dakar" class="toggle-content">
+      <p>Най-екстремното и популярно офроуд състезание. Провежда се в пустини, планини и степи на хиляди километри. Участници: мотоциклети, автомобили, камиони.</p>
+      <a href="https://www.dakar.com" target="_blank">Официален сайт</a>
+    </div>
+
+    <button class="toggle-button" onclick="toggleContent('baja')">Baja 1000</button>
+    <div id="baja" class="toggle-content">
+      <p>Епично офроуд състезание в Мексико, известно с високата си скорост и екстремни условия. Атрактивно за ATV, бъгита и камиони.</p>
+      <a href="https://score-international.com" target="_blank">Официален сайт</a>
+    </div>
+
+    <button class="toggle-button" onclick="toggleContent('king')">King of the Hammers</button>
+    <div id="king" class="toggle-content">
+      <p>Състезание, което комбинира скоростна пустинна надпревара и техничен rock crawling – само най-издръжливите машини успяват.</p>
+      <a href="https://www.ultra4racing.com" target="_blank">Официален сайт</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Офроуд състезания</p>
+      <div class="social-links">
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  function toggleContent(id) {
+    const element = document.getElementById(id);
+    element.style.display = element.style.display === "block" ? "none" : "block";
+  }
+
+  window.onload = function() {
+    const contentSections = document.querySelectorAll('.toggle-content');
+    contentSections.forEach(section => {
+      section.style.display = "none";
+    });
+  };
+</script>
+
+</body>
+</html>
